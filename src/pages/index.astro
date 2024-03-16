@@ -1,24 +1,160 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import data from "../scripts/data.json";
 
-data.forEach((element) => console.log(element.images.hero.small));
+interface painting {
+	name: string;
+	year: number;
+	description: string;
+	source: string;
+	link: string;
+	artist: {
+		image: string;
+		name: string;
+	};
+	images: {
+		thumbnail: string;
+		hero: {
+			small: string;
+			large: string;
+		};
+		gallery: string;
+	};
+}
+
+const tabletSecondRow: painting[] = [];
+const tabletFirstRow: painting[] = [];
+
+const desktopSecondRow: painting[] = [];
+const desktopFirstRow: painting[] = [];
+const desktopThirdRow: painting[] = [];
+const desktopFourthRow: painting[] = [];
+
+data.forEach((element, index) => {
+	if (index % 2) {
+		tabletSecondRow.push(element);
+	} else {
+		tabletFirstRow.push(element);
+	}
+});
+
+tabletSecondRow.forEach((element, index) => {
+	if (index % 2) {
+		desktopFirstRow.push(element);
+	} else {
+		desktopSecondRow.push(element);
+	}
+});
+
+tabletFirstRow.forEach((element, index) => {
+	if (index % 2) {
+		desktopThirdRow.push(element);
+	} else {
+		desktopFourthRow.push(element);
+	}
+});
 ---
 
 <Layout title="Galleria">
 	<main>
-		<div class="mobileOnly"></div>
-		{
-			data.map((painting) => (
-				<div class="painting">
-					<img src={painting.images.hero.small} alt="" />
-					<div class="paintingDescription">
-						<h2>{painting.name}</h2>
-						<h3>{painting.artist.name}</h3>
-					</div>
-				</div>
-			))
-		}
+		<div class="mobileOnly">
+			{
+				data.map((painting) => (
+					<a href={painting.link} class="painting">
+						<img src={painting.images.gallery} alt="" />
+						<div class="paintingDescription">
+							<h2>{painting.name}</h2>
+							<h3>{painting.artist.name}</h3>
+						</div>
+					</a>
+				))
+			}
+		</div>
+
+		<div class="tabletOnly">
+			<div class="tabletFirstRow">
+				{
+					tabletFirstRow.map((painting) => (
+						<a href={painting.link} class="painting">
+							<img src={painting.images.gallery} alt="" />
+							<div class="paintingDescription">
+								<h2>{painting.name}</h2>
+								<h3>{painting.artist.name}</h3>
+							</div>
+						</a>
+					))
+				}
+			</div>
+			<div class="tabletSecondRow">
+				{
+					tabletSecondRow.map((painting) => (
+						<a href={painting.link} class="painting">
+							<img src={painting.images.hero.large} alt="" />
+							<div class="paintingDescription">
+								<h2>{painting.name}</h2>
+								<h3>{painting.artist.name}</h3>
+							</div>
+						</a>
+					))
+				}
+			</div>
+		</div>
+
+		<div class="desktopOnly">
+			<div class="desktopFirstRow">
+				{
+					desktopFourthRow.map((painting) => (
+						<a href={painting.link} class="painting">
+							<img src={painting.images.hero.large} alt="" />
+							<div class="paintingDescription">
+								<h2>{painting.name}</h2>
+								<h3>{painting.artist.name}</h3>
+							</div>
+						</a>
+					))
+				}
+			</div>
+			<div class="desktopSecondRow">
+				{
+					desktopSecondRow.map((painting) => (
+						<a href={painting.link} class="painting">
+							<img src={painting.images.gallery} alt="" />
+							<div class="paintingDescription">
+								<h2>{painting.name}</h2>
+								<h3>{painting.artist.name}</h3>
+							</div>
+						</a>
+					))
+				}
+			</div>
+			<div class="desktopThirdRow">
+				{
+					desktopThirdRow.map((painting) => (
+						<a href={painting.link} class="painting">
+							<img src={painting.images.gallery} alt="" />
+							<div class="paintingDescription">
+								<h2>{painting.name}</h2>
+								<h3>{painting.artist.name}</h3>
+							</div>
+						</a>
+					))
+				}
+			</div>
+			<div class="desktopFourthRow">
+				{
+					desktopFirstRow.map((painting) => (
+						<a href={painting.link} class="painting">
+							<img src={painting.images.gallery} alt="" />
+							<div class="paintingDescription">
+								<h2>{painting.name}</h2>
+								<h3>{painting.artist.name}</h3>
+							</div>
+						</a>
+					))
+				}
+			</div>
+		</div>
 	</main></Layout
 >
 
@@ -31,31 +167,123 @@ data.forEach((element) => console.log(element.images.hero.small));
 		display: flex;
 		flex-direction: column;
 		gap: 1.5rem;
+		padding-block: 0 2rem;
 	}
-
+	.mobileOnly {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
 	.painting {
 		position: relative;
+		transition: 250ms ease-in-out;
 		img {
-			width: 100%;
-			height: max-content;
+			position: relative;
+			object-fit: contain;
+		}
+		&:hover {
+			opacity: 0.5;
+			transition: 250ms ease-in-out;
+			cursor: pointer;
+			// img, .paintingDescription{
+			// 	opacity: 1;
+			// }
 		}
 	}
 
 	.paintingDescription {
 		position: absolute;
-		bottom: 5%;
-		left: 5%;
+		width: 100%;
+		bottom: 0%;
+		left: 0%;
+		padding: 1rem;
 		z-index: 100;
+		background-image: linear-gradient(to top, black 0%, transparent 100%);
 		h2,
 		h3 {
-			color: var(--neutral-500);
+			max-width: 80%;
 		}
 		h2 {
 			font-size: var(--h2);
+			font-weight: bold;
+			color: var(--neutral-500);
 		}
 		h3 {
-			color: var(--neutral-500);
+			color: var(--neutral-300);
 			font-size: var(--subh2);
+			font-weight: normal;
+		}
+	}
+
+	.testImage {
+		min-width: 100%;
+	}
+
+	.tabletOnly,
+	.desktopOnly {
+		display: none;
+	}
+
+	@media only screen and (min-width: 768px) {
+		main {
+			padding-inline: 2.5rem;
+		}
+
+		.mobileOnly,
+		.desktopOnly {
+			display: none;
+		}
+
+		.painting {
+			height: fit-content;
+		}
+		.paintingDescription {
+			padding: 2rem;
+		}
+
+		.tabletOnly {
+			display: flex;
+			flex-direction: row;
+			gap: 2.5rem;
+			padding-block: 2.5rem;
+			.tabletFirstRow,
+			.tabletSecondRow {
+				display: flex;
+				flex-direction: column;
+				gap: 2.5rem;
+				max-width: calc(50% - 1.75rem);
+			}
+			// .tabletFirstRow {
+			// }
+			// .tabletSecondRow {
+			// }
+		}
+	}
+
+	@media only screen and (min-width: 1440px) {
+		.mobileOnly,
+		.tabletOnly {
+			display: none;
+		}
+
+		.desktopOnly {
+			display: flex;
+			flex-direction: row;
+			gap: 2.5rem;
+			padding-block: 2.5rem;
+			.desktopFirstRow,
+			.desktopSecondRow,
+			.desktopThirdRow,
+			.desktopFourthRow {
+				display: flex;
+				flex-direction: column;
+				gap: 2.5rem;
+				max-width: calc(25% - 1.75rem);
+			}
+			// .tabletFirstRow {
+			// }
+			// .tabletSecondRow {
+			// }
 		}
 	}
 </style>

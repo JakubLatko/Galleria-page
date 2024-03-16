@@ -1,0 +1,82 @@
+---
+interface Props {
+	nextPainting: string;
+	previousPainting: string;
+	title: string;
+	isPreviusDisabled: boolean;
+	isNextDisabled: boolean;
+	paintingTitle: string;
+	painter: string;
+}
+
+const {
+	nextPainting,
+	previousPainting,
+	title,
+	isPreviusDisabled,
+	isNextDisabled,
+	paintingTitle,
+	painter,
+} = Astro.props;
+import HeaderSlideshow from "../components/HeaderSlideshow.astro";
+import SlideshowFooter from "../components/FooterSlideshow.astro";
+import data from "../scripts/data.json";
+import "../scss/index.scss";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>{title}</title>
+	</head>
+	<body>
+		<HeaderSlideshow />
+		<slot />
+		<SlideshowFooter
+			nextPainting={nextPainting}
+			isNextDisabled={isNextDisabled}
+			previousPainting={previousPainting}
+			isPreviousDisabled={isPreviusDisabled}
+			painter={painter}
+			title={paintingTitle}
+			sliderPercentage={(100 * 1) / 15}
+		/>
+	</body>
+	<style is:global>
+		:root {
+			--neutral-100: #000000;
+			--neutral-200: #7d7d7d;
+			--neutral-300: #e5e5e5;
+			--neutral-400: #f3f3f3;
+			--neutral-500: #ffffff;
+
+			--h0: 200px;
+			--h1: 56px;
+			--h2: 24px;
+			--h3: 18px;
+
+			--subh1: 15px;
+			--subh2: 13px;
+
+			--link1: 12px;
+			--link2: 9px;
+
+			--body: 14px;
+		}
+		body {
+			font-family: "Libre Baskerville", serif;
+		}
+	</style>
+</html>
