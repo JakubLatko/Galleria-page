@@ -1,0 +1,30 @@
+---
+interface Props {
+	to: string;
+	text: string;
+	variant: "primary" | "secondary";
+}
+const { to, text, variant } = Astro.props;
+---
+
+<a class:list={variant} href={to}>{text}</a>
+
+<style lang="scss">
+	a {
+		height: fit-content;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: var(--neutral-200);
+	}
+	.primary {
+		line-height: 15px;
+		font-size: var(--link1);
+		letter-spacing: 2.5px;
+	}
+
+	.secondary {
+		line-height: 11px;
+		font-size: var(--link2);
+		letter-spacing: 2px;
+	}
+</style>

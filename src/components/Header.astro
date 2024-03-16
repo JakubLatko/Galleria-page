@@ -1,0 +1,37 @@
+---
+import Image from "astro/components/Image.astro";
+
+import Logo from "../assets/shared/logo.svg"
+import Link from "./Link.astro";
+
+---
+
+<header>
+	<a href="#">
+		<Image src={Logo} alt="Back to our site">
+	</a>
+	<Link to="/" variant="secondary" text="Start slideshow" >
+</header>
+
+
+<style lang="scss">
+
+	header{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 1rem 1.5rem;
+		border-bottom: 1px solid var(--neutral-300);
+		align-items: center;
+	}
+
+	a{
+		text-decoration: none;
+		width:30vw;
+		img{
+			object-fit: contain;
+		}
+		
+	}
+
+</style>

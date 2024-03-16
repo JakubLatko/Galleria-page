@@ -1,0 +1,61 @@
+---
+import Layout from "../layouts/Layout.astro";
+import data from "../scripts/data.json";
+
+data.forEach((element) => console.log(element.images.hero.small));
+---
+
+<Layout title="Galleria">
+	<main>
+		<div class="mobileOnly"></div>
+		{
+			data.map((painting) => (
+				<div class="painting">
+					<img src={painting.images.hero.small} alt="" />
+					<div class="paintingDescription">
+						<h2>{painting.name}</h2>
+						<h3>{painting.artist.name}</h3>
+					</div>
+				</div>
+			))
+		}
+	</main></Layout
+>
+
+<style lang="scss">
+	body {
+		background-color: var(--neutral-500);
+	}
+	main {
+		padding-inline: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.painting {
+		position: relative;
+		img {
+			width: 100%;
+			height: max-content;
+		}
+	}
+
+	.paintingDescription {
+		position: absolute;
+		bottom: 5%;
+		left: 5%;
+		z-index: 100;
+		h2,
+		h3 {
+			color: var(--neutral-500);
+		}
+		h2 {
+			font-size: var(--h2);
+		}
+		h3 {
+			color: var(--neutral-500);
+			font-size: var(--subh2);
+		}
+	}
+</style>
