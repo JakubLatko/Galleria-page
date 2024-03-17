@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import data from "../scripts/data.json";
 
@@ -20,6 +19,9 @@ interface painting {
 			large: string;
 		};
 		gallery: string;
+		indexGallery: string;
+		indexThumbnail: string;
+		indexLarge: string;
 	};
 }
 
@@ -63,7 +65,7 @@ tabletFirstRow.forEach((element, index) => {
 				data.map((painting) => (
 					<a href={painting.link} class="painting">
 						<img
-							src={painting.images.gallery}
+							src={painting.images.indexGallery}
 							alt={painting.name}
 						/>
 
@@ -82,7 +84,7 @@ tabletFirstRow.forEach((element, index) => {
 					tabletFirstRow.map((painting) => (
 						<a href={painting.link} class="painting">
 							<img
-								src={painting.images.thumbnail}
+								src={painting.images.indexThumbnail}
 								alt={painting.name}
 							/>
 
@@ -99,7 +101,7 @@ tabletFirstRow.forEach((element, index) => {
 					tabletSecondRow.map((painting) => (
 						<a href={painting.link} class="painting">
 							<img
-								src={painting.images.thumbnail}
+								src={painting.images.indexThumbnail}
 								alt={painting.name}
 							/>
 							<div class="paintingDescription">
@@ -118,7 +120,7 @@ tabletFirstRow.forEach((element, index) => {
 					desktopFourthRow.map((painting) => (
 						<a href={painting.link} class="painting">
 							<img
-								src={painting.images.hero.large}
+								src={painting.images.indexLarge}
 								alt={painting.name}
 							/>
 
@@ -135,7 +137,7 @@ tabletFirstRow.forEach((element, index) => {
 					desktopSecondRow.map((painting) => (
 						<a href={painting.link} class="painting">
 							<img
-								src={painting.images.gallery}
+								src={painting.images.indexGallery}
 								alt={painting.name}
 							/>
 
@@ -152,7 +154,7 @@ tabletFirstRow.forEach((element, index) => {
 					desktopThirdRow.map((painting) => (
 						<a href={painting.link} class="painting">
 							<img
-								src={painting.images.gallery}
+								src={painting.images.indexGallery}
 								alt={painting.name}
 							/>
 
@@ -169,7 +171,7 @@ tabletFirstRow.forEach((element, index) => {
 					desktopFirstRow.map((painting) => (
 						<a href={painting.link} class="painting">
 							<img
-								src={painting.images.gallery}
+								src={painting.images.indexGallery}
 								alt={painting.name}
 							/>
 
