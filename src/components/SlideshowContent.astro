@@ -23,7 +23,7 @@ import Link from "./Link.astro";
 			<img src={paintingMobile} alt={title} class="painting mobileOnly"/>
 			<img src={paintingDesktop}  alt={title} class="painting desktopOnly" />
 			<button class="viewImage">
-				<img src="../src/assets/shared/icon-view-image.svg" alt="" />
+				<img src="../src/assets/shared/icon-view-image.svg" alt="View image" />
 				<p>View image</p>
 			</button>
 		</div>
@@ -48,20 +48,61 @@ import Link from "./Link.astro";
 	</div>
 </main>
 
-<dialog>
+<dialog class="dialog" id="dialog">
+	<button class="dialogClose">CLOSE</button>
+	<img src={paintingMobile} alt={title}/>
+	
+</dialog>
 
 <style lang="scss">
 	.container{
+		
 		padding-inline: 1.5rem;
 		padding-block: 2rem;
 		margin-bottom: 4rem;
 	}
 	.paintingAndControls{
 		position: relative;
+		
 	}
+	.mobileOnly{
+		
+	}
+	dialog[open]{
+		border: 0;
+		background: transparent;
+		display: flex;
+		flex-direction: column;
+		z-index: 1000;
+		max-height: 80vh;
+		max-width: 90vw;
+		button{
+			margin-left: auto;
+			color: var(--neutral-500);
+			font-size: var(--subh1);
+			text-transform: uppercase;
+			letter-spacing: 2.5px;
+			background: transparent;
+			border: 0;
+		}
+		img{
+			max-height: 80vh;
+		// max-width: 90vw;
+			
+		}
+	}
+	dialog::backdrop{
+		
+			background-color: black;
+		opacity: 0.8;
+	}
+	
+
 	.desktopOnly{
 		display: none;
+		
 	}
+
 	.viewImage{
 		position: absolute;
 		left: 5vw;
@@ -84,7 +125,7 @@ import Link from "./Link.astro";
 	}
 	.paintingInfo{
 		
-		transform: translateY(-50%);
+		transform: translateY(-50%) translateX(-1%);
 		background-color: var(--neutral-500);
 		width: fit-content;
 		padding-inline: 1.75rem 2.5rem;
@@ -103,7 +144,7 @@ import Link from "./Link.astro";
 		aspect-ratio: 1;
 		object-fit: contain;
 		width: 20vw;
-		transform: translateY(-75%);
+		transform: translateY(-75%) ;
 	}
 	.descriptionAndLink{
 		display: flex;
@@ -141,6 +182,9 @@ import Link from "./Link.astro";
 		}
 		.desktopOnly{
 			display: block;
+		}
+		dialog .desktopOnly{
+			display:initial;
 		}
 		.paintingAndControls{
 			.painting{
@@ -223,3 +267,23 @@ import Link from "./Link.astro";
 
 	
 </style>
+
+<script is:inline>
+	function dialogHandler() {
+		const dialog = document.querySelector("dialog");
+	const showButton = document.querySelector(".viewImage");
+	const closeButton = document.querySelector(".dialogClose");
+
+	
+	showButton.addEventListener("click", () => {
+	  dialog.showModal();
+	});
+
+	
+	closeButton.addEventListener("click", () => {
+	  dialog.close();
+	});
+	}
+	dialogHandler()
+	document.addEventListener("astro:page-load", dialogHandler);
+</script>
