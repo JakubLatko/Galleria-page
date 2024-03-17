@@ -6,7 +6,7 @@ import Link from "./Link.astro";
 ---
 
 <header>
-	<a href="#">
+	<a href="/">
 		<Image src={Logo} alt="Back to our site" />
 		<Link to="/" variant="secondary" text="Stop slideshow" />
 
@@ -38,6 +38,10 @@ import Link from "./Link.astro";
 			}
 
 			@media only screen and (min-width: 1440px) {
+				header {
+					padding: 1.5rem 3rem;
+				}
 			}
-		</style></a>
+		</style></a
+	>
 </header>

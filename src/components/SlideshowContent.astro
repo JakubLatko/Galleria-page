@@ -1,40 +1,52 @@
 ---
 interface Props {
-	painting: string;
+	paintingMobile: string;
+	paintingDesktop:string,
 	title: string;
 	painter: string;
 	painterPortrait: string;
 	description: string;
 	source: string;
+	year: number;
+	
 }
 
-const { painting, title, painter, painterPortrait, description, source } =
+const { paintingMobile, title, painter, painterPortrait, description, source, year, paintingDesktop } =
 	Astro.props;
 
 import Link from "./Link.astro";
 ---
 
-<div class="container">
-	<div class="paintingAndControls">
-		<img src={painting} alt="" />
-		<button class="viewImage">
-			<img src="../src/assets/shared/icon-view-image.svg" alt="" />
-			<p>View image</p>
-		</button>
+<main class="container">
+	<div class="tabletDesktopWrapper">
+		<div class="paintingAndControls">
+			<img src={paintingMobile} alt={title} class="painting mobileOnly"/>
+			<img src={paintingDesktop}  alt={title} class="painting desktopOnly" />
+			<button class="viewImage">
+				<img src="../src/assets/shared/icon-view-image.svg" alt="" />
+				<p>View image</p>
+			</button>
+		</div>
+		<div class="painterWrapper">
+			<div class="paintingInfo">
+				<h1>{title}</h1>
+				<h2>{painter}</h2>
+			</div>
+	
+			<div class="paintersPortrait">
+				<img src={painterPortrait} alt="Portrait of the painter" />
+			</div>
+		</div>
 	</div>
-	<div>
-		<h1>{title}</h1>
-		<h2>{painter}</h2>
-	</div>
-
-	<div>
-		<img src={painterPortrait} alt="" />
-	</div>
-	<div>
+	
+	
+	<div class="descriptionAndLink">
 		<p>{description}</p>
+		<h2>{year}</h2>
 		<Link variant="primary"  to={source} text="Go to source" />
+		
 	</div>
-</div>
+</main>
 
 <dialog>
 
@@ -46,6 +58,9 @@ import Link from "./Link.astro";
 	}
 	.paintingAndControls{
 		position: relative;
+	}
+	.desktopOnly{
+		display: none;
 	}
 	.viewImage{
 		position: absolute;
@@ -67,4 +82,144 @@ import Link from "./Link.astro";
 			letter-spacing: 2.5px;
 		}
 	}
+	.paintingInfo{
+		
+		transform: translateY(-50%);
+		background-color: var(--neutral-500);
+		width: fit-content;
+		padding-inline: 1.75rem 2.5rem;
+		padding-block: 1.75rem;
+		h1{
+			font-size: var(--h2);
+			color: var(--neutral-100);
+		}
+		h2{
+			font-size: var(--subh1);
+			color: var(--neutral-200);
+		}
+	}
+
+	.paintersPortrait{
+		aspect-ratio: 1;
+		object-fit: contain;
+		width: 20vw;
+		transform: translateY(-75%);
+	}
+	.descriptionAndLink{
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 3rem;
+		gap: 4rem;
+		position: relative;
+		p{
+			color: var(--neutral-200);
+			font-size: var(--subh1);
+			font-weight: bold;
+			line-height: 28px;
+			z-index: 10;
+		}
+		h2{
+			position: absolute;
+			font-size: calc(var(--h0) / 2);
+			color: var(--neutral-400);
+			z-index: 5;
+			font-weight: bold;
+			top: -5rem;
+			right: 0;
+		}
+		a{
+			z-index: 10;
+			
+		}
+	}
+	@media only screen and (min-width:768px){
+		.container{
+			padding-inline: 2.5rem;
+		}
+		.mobileOnly{
+			display: none;
+		}
+		.desktopOnly{
+			display: block;
+		}
+		.paintingAndControls{
+			.painting{
+				width: 100vw;
+			}
+			.viewImage{
+				bottom: 5%;
+				top: auto;
+				left: 5%;
+
+			}
+		}
+		.tabletDesktopWrapper{
+			display: flex;
+			flex-direction: row;
+
+		}
+		.paintingInfo{
+			transform: translateY(0) translateX(-50%);
+			padding-inline: 3rem 0;
+			h1{
+				font-size: var(--h1);
+				line-height: 64px;
+				font-weight: bold;
+			}
+			h2{
+				font-size: var(--subh1);
+			}
+		}
+		.paintersPortrait{
+			transform: translateY(0) translateX(15%) ;
+			width: 12.5vw;
+		}
+		.descriptionAndLink{
+			padding-block: 10rem 4rem;
+			padding-inline: 8rem;
+			h2{
+				font-size: var(--h0);
+				top: 0;
+				left: 0;
+				right: auto;
+			}
+		}
+		
+	}	
+	@media only screen and (min-width:1440px){
+
+		.container{
+			display: flex;
+			align-items: center;
+			
+		}
+		.tabletDesktopWrapper{
+			width: 55%;
+		}
+		.descriptionAndLink{
+			
+			width: 45%;
+			h2{
+				left: auto;
+				right: 0;
+			}
+		}
+		.paintingInfo{
+			padding: 1rem 2rem 3rem 3rem;
+			transform: translateY(-1%) translateX(-50%);
+		}
+		.painterWrapper{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.paintersPortrait{
+			margin-top: auto;
+			transform: translateY(50%) translateX(15%);
+		}
+	}
+
+
+
+	
 </style>

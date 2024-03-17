@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import { ViewTransitions } from "astro:transitions";
 import Header from "../components/Header.astro";
 import "../scss/index.scss";
 ---
@@ -22,36 +23,35 @@ import "../scss/index.scss";
 			href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
 			rel="stylesheet"
 		/>
-
+		<ViewTransitions />
 		<title>{title}</title>
 	</head>
 	<body>
 		<Header />
 		<slot />
-	</body>
+	</body><style is:global>
+		:root {
+			--neutral-100: #000000;
+			--neutral-200: #7d7d7d;
+			--neutral-300: #e5e5e5;
+			--neutral-400: #f3f3f3;
+			--neutral-500: #ffffff;
+
+			--h0: 200px;
+			--h1: 56px;
+			--h2: 24px;
+			--h3: 18px;
+
+			--subh1: 15px;
+			--subh2: 13px;
+
+			--link1: 12px;
+			--link2: 9px;
+
+			--body: 14px;
+		}
+		body {
+			font-family: "Libre Baskerville", serif;
+		}
+	</style>
 </html>
-<style is:global>
-	:root {
-		--neutral-100: #000000;
-		--neutral-200: #7d7d7d;
-		--neutral-300: #e5e5e5;
-		--neutral-400: #f3f3f3;
-		--neutral-500: #ffffff;
-
-		--h0: 200px;
-		--h1: 56px;
-		--h2: 24px;
-		--h3: 18px;
-
-		--subh1: 15px;
-		--subh2: 13px;
-
-		--link1: 12px;
-		--link2: 9px;
-
-		--body: 14px;
-	}
-	body {
-		font-family: "Libre Baskerville", serif;
-	}
-</style>

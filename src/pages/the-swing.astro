@@ -1,36 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+import Slideshow from "../layouts/Slideshow.astro";
+import SlideshowContent from "../components/SlideshowContent.astro";
+import data from "../scripts/data.json";
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Galleria slideshow site</title>
-</head>
-<body>
-  Stop slideshow
+const prefix = data[14];
+---
 
-  View image
-  <!-- Modal start -->
-  Close
-  <!-- Modal end -->
-
-  The Swing
-  Jean-Honoré Fragonard
-
-  1767
-  The painting depicts an elegant young woman on a swing. A smiling young man, 
-  hiding in the bushes on the left, watches her from a vantage point that allows 
-  him to see up into her billowing dress, where his arm is pointed with hat in 
-  hand. A smiling older man, who is nearly hidden in the shadows on the right, 
-  propels the swing with a pair of ropes. The older man appears to be unaware of 
-  the young man. As the young lady swings high, she throws her left leg up, 
-  allowing her dainty shoe to fly through the air. 
-
-  Go to source <!-- URL: https://en.wikipedia.org/wiki/The_Swing_(Fragonard) -->
-
-  The Swing
-  Jean-Honoré Fragonard
-</body>
-</html>
+<Slideshow
+	isNextDisabled={true}
+	isPreviusDisabled={false}
+	painter={prefix.artist.name}
+	paintingTitle={prefix.name}
+	nextPainting={data[14].link}
+	previousPainting={data[13].link}
+	sliderPercentage={(100 * 15) / 15}
+	title={"Galleria"}>
+	<SlideshowContent
+		description={prefix.description}
+		painter={prefix.artist.name}
+		painterPortrait={prefix.artist.image}
+		paintingMobile={prefix.images.gallery}
+		paintingDesktop={prefix.images.hero.large}
+		source={prefix.source}
+		title={prefix.name}
+		year={prefix.year}
+	/>
+</Slideshow>

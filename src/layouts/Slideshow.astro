@@ -7,6 +7,7 @@ interface Props {
 	isNextDisabled: boolean;
 	paintingTitle: string;
 	painter: string;
+	sliderPercentage: number;
 }
 
 const {
@@ -17,11 +18,13 @@ const {
 	isNextDisabled,
 	paintingTitle,
 	painter,
+	sliderPercentage,
 } = Astro.props;
 import HeaderSlideshow from "../components/HeaderSlideshow.astro";
 import SlideshowFooter from "../components/FooterSlideshow.astro";
 import data from "../scripts/data.json";
 import "../scss/index.scss";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -38,7 +41,7 @@ import "../scss/index.scss";
 			href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
 			rel="stylesheet"
 		/>
-
+		<ViewTransitions />
 		<title>{title}</title>
 	</head>
 	<body>
@@ -51,32 +54,34 @@ import "../scss/index.scss";
 			isPreviousDisabled={isPreviusDisabled}
 			painter={painter}
 			title={paintingTitle}
-			sliderPercentage={(100 * 1) / 15}
+			sliderPercentage={sliderPercentage}
 		/>
+		<style is:global>
+			:root {
+				--neutral-100: #000000;
+				--neutral-200: #7d7d7d;
+				--neutral-300: #e5e5e5;
+				--neutral-400: #f3f3f3;
+				--neutral-500: #ffffff;
+
+				--h0: 200px;
+				--h1: 56px;
+				--h2: 24px;
+				--h3: 18px;
+
+				--subh1: 15px;
+				--subh2: 13px;
+
+				--link1: 12px;
+				--link2: 9px;
+
+				--body: 14px;
+			}
+			body {
+				font-family: "Libre Baskerville", serif;
+				display: flex;
+				flex-direction: column;
+			}
+		</style>
 	</body>
-	<style is:global>
-		:root {
-			--neutral-100: #000000;
-			--neutral-200: #7d7d7d;
-			--neutral-300: #e5e5e5;
-			--neutral-400: #f3f3f3;
-			--neutral-500: #ffffff;
-
-			--h0: 200px;
-			--h1: 56px;
-			--h2: 24px;
-			--h3: 18px;
-
-			--subh1: 15px;
-			--subh2: 13px;
-
-			--link1: 12px;
-			--link2: 9px;
-
-			--body: 14px;
-		}
-		body {
-			font-family: "Libre Baskerville", serif;
-		}
-	</style>
 </html>

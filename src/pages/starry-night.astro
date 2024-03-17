@@ -13,13 +13,16 @@ const prefix = data[0];
 	paintingTitle={prefix.name}
 	nextPainting={data[1].link}
 	previousPainting={data[0].link}
+	sliderPercentage={(100 * 1) / 15}
 	title={"Galleria"}>
 	<SlideshowContent
 		description={prefix.description}
 		painter={prefix.artist.name}
 		painterPortrait={prefix.artist.image}
-		painting={prefix.images.gallery}
+		paintingMobile={prefix.images.gallery}
+		paintingDesktop={prefix.images.hero.large}
 		source={prefix.source}
 		title={prefix.name}
+		year={prefix.year}
 	/>
 </Slideshow>

@@ -63,6 +63,7 @@ tabletFirstRow.forEach((element, index) => {
 				data.map((painting) => (
 					<a href={painting.link} class="painting">
 						<img src={painting.images.gallery} alt="" />
+						// gallery
 						<div class="paintingDescription">
 							<h2>{painting.name}</h2>
 							<h3>{painting.artist.name}</h3>
@@ -77,7 +78,8 @@ tabletFirstRow.forEach((element, index) => {
 				{
 					tabletFirstRow.map((painting) => (
 						<a href={painting.link} class="painting">
-							<img src={painting.images.gallery} alt="" />
+							<img src={painting.images.thumbnail} alt="" />
+							// gallery
 							<div class="paintingDescription">
 								<h2>{painting.name}</h2>
 								<h3>{painting.artist.name}</h3>
@@ -90,7 +92,7 @@ tabletFirstRow.forEach((element, index) => {
 				{
 					tabletSecondRow.map((painting) => (
 						<a href={painting.link} class="painting">
-							<img src={painting.images.hero.large} alt="" />
+							<img src={painting.images.thumbnail} alt="" />
 							<div class="paintingDescription">
 								<h2>{painting.name}</h2>
 								<h3>{painting.artist.name}</h3>
@@ -107,6 +109,7 @@ tabletFirstRow.forEach((element, index) => {
 					desktopFourthRow.map((painting) => (
 						<a href={painting.link} class="painting">
 							<img src={painting.images.hero.large} alt="" />
+							//large
 							<div class="paintingDescription">
 								<h2>{painting.name}</h2>
 								<h3>{painting.artist.name}</h3>
@@ -120,6 +123,7 @@ tabletFirstRow.forEach((element, index) => {
 					desktopSecondRow.map((painting) => (
 						<a href={painting.link} class="painting">
 							<img src={painting.images.gallery} alt="" />
+
 							<div class="paintingDescription">
 								<h2>{painting.name}</h2>
 								<h3>{painting.artist.name}</h3>
@@ -133,6 +137,7 @@ tabletFirstRow.forEach((element, index) => {
 					desktopThirdRow.map((painting) => (
 						<a href={painting.link} class="painting">
 							<img src={painting.images.gallery} alt="" />
+
 							<div class="paintingDescription">
 								<h2>{painting.name}</h2>
 								<h3>{painting.artist.name}</h3>
@@ -146,6 +151,7 @@ tabletFirstRow.forEach((element, index) => {
 					desktopFirstRow.map((painting) => (
 						<a href={painting.link} class="painting">
 							<img src={painting.images.gallery} alt="" />
+
 							<div class="paintingDescription">
 								<h2>{painting.name}</h2>
 								<h3>{painting.artist.name}</h3>
