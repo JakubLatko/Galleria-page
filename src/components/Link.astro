@@ -15,6 +15,11 @@ const { to, text, variant } = Astro.props;
 		text-decoration: none;
 		text-transform: uppercase;
 		color: var(--neutral-200);
+		&:hover,
+		&:focus {
+			color: var(--neutral-100);
+			cursor: pointer;
+		}
 	}
 	.primary {
 		line-height: 15px;

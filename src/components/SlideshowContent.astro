@@ -84,6 +84,12 @@ import Link from "./Link.astro";
 			letter-spacing: 2.5px;
 			background: transparent;
 			border: 0;
+			transition: 150ms ease-in-out;
+			&:hover, &:focus{
+				color: var(--neutral-200);
+				transition: 150ms ease-in-out;
+				cursor: pointer;
+			}
 		}
 		img{
 			max-height: 80vh;
@@ -116,15 +122,21 @@ import Link from "./Link.astro";
 		align-items: center;
 		gap: .5rem;
 		padding:.75rem 1rem;
+		transition: 150ms ease-in-out;
 		p{
 			font-size: var(--link1);
 			text-transform: uppercase;
 			font-family: "Libre Baskerville", serif;
 			letter-spacing: 2.5px;
 		}
+		&:hover, &:focus{
+			background-color: var(--neutral-500);
+			opacity: .7;
+			cursor: pointer;
+			transition: 150ms ease-in-out;
+		}
 	}
 	.paintingInfo{
-		
 		transform: translateY(-50%) translateX(-1%);
 		background-color: var(--neutral-500);
 		width: fit-content;
