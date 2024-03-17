@@ -6,16 +6,16 @@
 		"source": "https://en.wikipedia.org/wiki/The_Starry_Night",
 		"link": "/starry-night",
 		"artist": {
-			"image": "../src/assets/starry-night/artist.jpg",
+			"image": "../../public/assets/starry-night/artist.jpg",
 			"name": "Vincent Van Gogh"
 		},
 		"images": {
-			"thumbnail": "../src/assets/starry-night/thumbnail.jpg",
+			"thumbnail": "../../public/assets/starry-night/thumbnail.jpg",
 			"hero": {
-				"small": "../src/assets/starry-night/hero-small.jpg",
-				"large": "../src/assets/starry-night/hero-large.jpg"
+				"small": "../../public/assets/starry-night/hero-small.jpg",
+				"large": "../../public/assets/starry-night/hero-large.jpg"
 			},
-			"gallery": "../src/assets/starry-night/gallery.jpg"
+			"gallery": "../../public/assets/starry-night/gallery.jpg"
 		}
 	},
 	{
@@ -25,16 +25,16 @@
 		"source": "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring",
 		"link": "/girl-with-pearl-earring",
 		"artist": {
-			"image": "../src/assets/girl-with-pearl-earring/artist.jpg",
+			"image": "../../public/assets/girl-with-pearl-earring/artist.jpg",
 			"name": "Johannes Vermeer"
 		},
 		"images": {
-			"thumbnail": "../src/assets/girl-with-pearl-earring/thumbnail.jpg",
+			"thumbnail": "../../public/assets/girl-with-pearl-earring/thumbnail.jpg",
 			"hero": {
-				"small": "../src/assets/girl-with-pearl-earring/hero-small.jpg",
-				"large": "../src/assets/girl-with-pearl-earring/hero-large.jpg"
+				"small": "../../public/assets/girl-with-pearl-earring/hero-small.jpg",
+				"large": "../../public/assets/girl-with-pearl-earring/hero-large.jpg"
 			},
-			"gallery": "../src/assets/girl-with-pearl-earring/gallery.jpg"
+			"gallery": "../../public/assets/girl-with-pearl-earring/gallery.jpg"
 		}
 	},
 	{
@@ -44,16 +44,16 @@
 		"source": "https://en.wikipedia.org/wiki/Guernica_(Picasso)",
 		"link": "/guernica",
 		"artist": {
-			"image": "../src/assets/guernica/artist.jpg",
+			"image": "../../public/assets/guernica/artist.jpg",
 			"name": "Pablo Picasso"
 		},
 		"images": {
-			"thumbnail": "../src/assets/guernica/thumbnail.jpg",
+			"thumbnail": "../../public/assets/guernica/thumbnail.jpg",
 			"hero": {
-				"small": "../src/assets/guernica/hero-small.jpg",
-				"large": "../src/assets/guernica/hero-large.jpg"
+				"small": "../../public/assets/guernica/hero-small.jpg",
+				"large": "../../public/assets/guernica/hero-large.jpg"
 			},
-			"gallery": "../src/assets/guernica/gallery.jpg"
+			"gallery": "../../public/assets/guernica/gallery.jpg"
 		}
 	},
 	{
@@ -63,16 +63,16 @@
 		"source": "https://en.wikipedia.org/wiki/Penitent_Magdalene_(Artemisia_Gentileschi)",
 		"link": "/penitent-magdalene",
 		"artist": {
-			"image": "../src/assets/penitent-magdalene/artist.jpg",
+			"image": "../../public/assets/penitent-magdalene/artist.jpg",
 			"name": "Artemisia Gentileschi"
 		},
 		"images": {
-			"thumbnail": "../src/assets/penitent-magdalene/thumbnail.jpg",
+			"thumbnail": "../../public/assets/penitent-magdalene/thumbnail.jpg",
 			"hero": {
-				"small": "../src/assets/penitent-magdalene/hero-small.jpg",
-				"large": "../src/assets/penitent-magdalene/hero-large.jpg"
+				"small": "../../public/assets/penitent-magdalene/hero-small.jpg",
+				"large": "../../public/assets/penitent-magdalene/hero-large.jpg"
 			},
-			"gallery": "../src/assets/penitent-magdalene/gallery.jpg"
+			"gallery": "../../public/assets/penitent-magdalene/gallery.jpg"
 		}
 	},
 	{
@@ -82,16 +82,16 @@
 		"source": "https://en.wikipedia.org/wiki/The_Storm_on_the_Sea_of_Galilee",
 		"link": "/the-storm-on-the-sea-of-galilee",
 		"artist": {
-			"image": "../src/assets/the-storm-on-the-sea-of-galilee/artist.jpg",
+			"image": "../../public/assets/the-storm-on-the-sea-of-galilee/artist.jpg",
 			"name": "Rembrandt"
 		},
 		"images": {
-			"thumbnail": "../src/assets/the-storm-on-the-sea-of-galilee/thumbnail.jpg",
+			"thumbnail": "../../public/assets/the-storm-on-the-sea-of-galilee/thumbnail.jpg",
 			"hero": {
-				"small": "../src/assets/the-storm-on-the-sea-of-galilee/hero-small.jpg",
-				"large": "../src/assets/the-storm-on-the-sea-of-galilee/hero-large.jpg"
+				"small": "../../public/assets/the-storm-on-the-sea-of-galilee/hero-small.jpg",
+				"large": "../../public/assets/the-storm-on-the-sea-of-galilee/hero-large.jpg"
 			},
-			"gallery": "../src/assets/the-storm-on-the-sea-of-galilee/gallery.jpg"
+			"gallery": "../../public/assets/the-storm-on-the-sea-of-galilee/gallery.jpg"
 		}
 	},
 	{
@@ -101,16 +101,16 @@
 		"source": "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa",
 		"link": "/the-great-wave-off-kanagawa",
 		"artist": {
-			"image": "../src/assets/the-great-wave-off-kanagawa/artist.jpg",
+			"image": "../../public/assets/the-great-wave-off-kanagawa/artist.jpg",
 			"name": "Hokusai"
 		},
 		"images": {
-			"thumbnail": "../src/assets/the-great-wave-off-kanagawa/thumbnail.jpg",
+			"thumbnail": "../../public/assets/the-great-wave-off-kanagawa/thumbnail.jpg",
 			"hero": {
-				"small": "../src/assets/the-great-wave-off-kanagawa/hero-small.jpg",
-				"large": "../src/assets/the-great-wave-off-kanagawa/hero-large.jpg"
+				"small": "../../public/assets/the-great-wave-off-kanagawa/hero-small.jpg",
+				"large": "../../public/assets/the-great-wave-off-kanagawa/hero-large.jpg"
 			},
-			"gallery": "../src/assets/the-great-wave-off-kanagawa/gallery.jpg"
+			"gallery": "../../public/assets/the-great-wave-off-kanagawa/gallery.jpg"
 		}
 	},
 	{
@@ -120,16 +120,16 @@
 		"source": "https://en.wikipedia.org/wiki/Van_Gogh_self-portrait_(1889)",
 		"link": "/van-gogh-self-portrait",
 		"artist": {
-			"image": "../src/assets/van-gogh-self-portrait/artist.jpg",
+			"image": "../../public/assets/van-gogh-self-portrait/artist.jpg",
 			"name": "Vincent Van Gogh"
 		},
 		"images": {
-			"thumbnail": "../src/assets/van-gogh-self-portrait/thumbnail.jpg",
+			"thumbnail": "../../public/assets/van-gogh-self-portrait/thumbnail.jpg",
 			"hero": {
-				"small": "../src/assets/van-gogh-self-portrait/hero-small.jpg",
-				"large": "../src/assets/van-gogh-self-portrait/hero-large.jpg"
+				"small": "../../public/assets/van-gogh-self-portrait/hero-small.jpg",
+				"large": "../../public/assets/van-gogh-self-portrait/hero-large.jpg"
 			},
-			"gallery": "../src/assets/van-gogh-self-portrait/gallery.jpg"
+			"gallery": "../../public/assets/van-gogh-self-portrait/gallery.jpg"
 		}
 	},
 	{
@@ -139,16 +139,16 @@
 		"source": "https://en.wikipedia.org/wiki/The_Sleeping_Gypsy",
 		"link": "/the-sleeping-gypsy",
 		"artist": {
-			"image": "../src/assets/the-sleeping-gypsy/artist.jpg",
+			"image": "../../public/assets/the-sleeping-gypsy/artist.jpg",
 			"name": "Henri Rousseau"
 		},
 		"images": {
-			"thumbnail": "../src/assets/the-sleeping-gypsy/thumbnail.jpg",
+			"thumbnail": "../../public/assets/the-sleeping-gypsy/thumbnail.jpg",
 			"hero": {
-				"small": "../src/assets/the-sleeping-gypsy/hero-small.jpg",
-				"large": "../src/assets/the-sleeping-gypsy/hero-large.jpg"
+				"small": "../../public/assets/the-sleeping-gypsy/hero-small.jpg",
+				"large": "../../public/assets/the-sleeping-gypsy/hero-large.jpg"
 			},
-			"gallery": "../src/assets/the-sleeping-gypsy/gallery.jpg"
+			"gallery": "../../public/assets/the-sleeping-gypsy/gallery.jpg"
 		}
 	},
 	{
@@ -158,16 +158,16 @@
 		"source": "https://en.wikipedia.org/wiki/Lady_with_an_Ermine",
 		"link": "/lady-with-an-ermine",
 		"artist": {
-			"image": "../src/assets/lady-with-an-ermine/artist.jpg",
+			"image": "../../public/assets/lady-with-an-ermine/artist.jpg",
 			"name": "Leonardo da Vinci"
 		},
 		"images": {
-			"thumbnail": "../src/assets/lady-with-an-ermine/thumbnail.jpg",
+			"thumbnail": "../../public/assets/lady-with-an-ermine/thumbnail.jpg",
 			"hero": {
-				"small": "../src/assets/lady-with-an-ermine/hero-small.jpg",
-				"large": "../src/assets/lady-with-an-ermine/hero-large.jpg"
+				"small": "../../public/assets/lady-with-an-ermine/hero-small.jpg",
+				"large": "../../public/assets/lady-with-an-ermine/hero-large.jpg"
 			},
-			"gallery": "../src/assets/lady-with-an-ermine/gallery.jpg"
+			"gallery": "../../public/assets/lady-with-an-ermine/gallery.jpg"
 		}
 	},
 	{
@@ -177,16 +177,16 @@
 		"source": "https://en.wikipedia.org/wiki/The_Night_Caf%C3%A9",
 		"link": "/the-night-cafe",
 		"artist": {
-			"image": "../src/assets/the-night-cafe/artist.jpg",
+			"image": "../../public/assets/the-night-cafe/artist.jpg",
 			"name": "Vincent Van Gogh"
 		},
 		"images": {
-			"thumbnail": "../src/assets/the-night-cafe/thumbnail.jpg",
+			"thumbnail": "../../public/assets/the-night-cafe/thumbnail.jpg",
 			"hero": {
-				"small": "../src/assets/the-night-cafe/hero-small.jpg",
-				"large": "../src/assets/the-night-cafe/hero-large.jpg"
+				"small": "../../public/assets/the-night-cafe/hero-small.jpg",
+				"large": "../../public/assets/the-night-cafe/hero-large.jpg"
 			},
-			"gallery": "../src/assets/the-night-cafe/gallery.jpg"
+			"gallery": "../../public/assets/the-night-cafe/gallery.jpg"
 		}
 	},
 	{
@@ -196,16 +196,16 @@
 		"source": "https://en.wikipedia.org/wiki/The_Basket_of_Apples",
 		"link": "/the-basket-of-apples",
 		"artist": {
-			"image": "../src/assets/the-basket-of-apples/artist.jpg",
+			"image": "../../public/assets/the-basket-of-apples/artist.jpg",
 			"name": "Paul Cézanne"
 		},
 		"images": {
-			"thumbnail": "../src/assets/the-basket-of-apples/thumbnail.jpg",
+			"thumbnail": "../../public/assets/the-basket-of-apples/thumbnail.jpg",
 			"hero": {
-				"small": "../src/assets/the-basket-of-apples/hero-small.jpg",
-				"large": "../src/assets/the-basket-of-apples/hero-large.jpg"
+				"small": "../../public/assets/the-basket-of-apples/hero-small.jpg",
+				"large": "../../public/assets/the-basket-of-apples/hero-large.jpg"
 			},
-			"gallery": "../src/assets/the-basket-of-apples/gallery.jpg"
+			"gallery": "../../public/assets/the-basket-of-apples/gallery.jpg"
 		}
 	},
 	{
@@ -215,35 +215,35 @@
 		"source": "https://en.wikipedia.org/wiki/The_Boy_in_the_Red_Vest",
 		"link": "/the-boy-in-the-red-vest",
 		"artist": {
-			"image": "../src/assets/the-boy-in-the-red-vest/artist.jpg",
+			"image": "../../public/assets/the-boy-in-the-red-vest/artist.jpg",
 			"name": "Paul Cézanne"
 		},
 		"images": {
-			"thumbnail": "../src/assets/the-boy-in-the-red-vest/thumbnail.jpg",
+			"thumbnail": "../../public/assets/the-boy-in-the-red-vest/thumbnail.jpg",
 			"hero": {
-				"small": "../src/assets/the-boy-in-the-red-vest/hero-small.jpg",
-				"large": "../src/assets/the-boy-in-the-red-vest/hero-large.jpg"
+				"small": "../../public/assets/the-boy-in-the-red-vest/hero-small.jpg",
+				"large": "../../public/assets/the-boy-in-the-red-vest/hero-large.jpg"
 			},
-			"gallery": "../src/assets/the-boy-in-the-red-vest/gallery.jpg"
+			"gallery": "../../public/assets/the-boy-in-the-red-vest/gallery.jpg"
 		}
 	},
 	{
 		"name": "Arnolfini Portrait",
 		"year": 1434,
-		"description": "It is considered one of the most original and complex paintings in Western art, because of its beauty, complex iconography, geometric orthogonal perspective, and expansion of the picture space with the use of a mirror. According to Ernst Gombrich \"in its own way it was as new and revolutionary as Donatello's or Masaccio's work in Italy. A simple corner of the real world had suddenly been fixed on to a panel as if by magic ../src. For the first time in history the artist became the perfect eye-witness in the truest sense of the term\".",
+		"description": "It is considered one of the most original and complex paintings in Western art, because of its beauty, complex iconography, geometric orthogonal perspective, and expansion of the picture space with the use of a mirror. According to Ernst Gombrich \"in its own way it was as new and revolutionary as Donatello's or Masaccio's work in Italy. A simple corner of the real world had suddenly been fixed on to a panel as if by magic ../../public. For the first time in history the artist became the perfect eye-witness in the truest sense of the term\".",
 		"source": "https://en.wikipedia.org/wiki/Arnolfini_Portrait",
 		"link": "/arnolfini-portrait",
 		"artist": {
-			"image": "../src/assets/arnolfini-portrait/artist.jpg",
+			"image": "../../public/assets/arnolfini-portrait/artist.jpg",
 			"name": "Jan van Eyck"
 		},
 		"images": {
-			"thumbnail": "../src/assets/arnolfini-portrait/thumbnail.jpg",
+			"thumbnail": "../../public/assets/arnolfini-portrait/thumbnail.jpg",
 			"hero": {
-				"small": "../src/assets/arnolfini-portrait/hero-small.jpg",
-				"large": "../src/assets/arnolfini-portrait/hero-large.jpg"
+				"small": "../../public/assets/arnolfini-portrait/hero-small.jpg",
+				"large": "../../public/assets/arnolfini-portrait/hero-large.jpg"
 			},
-			"gallery": "../src/assets/arnolfini-portrait/gallery.jpg"
+			"gallery": "../../public/assets/arnolfini-portrait/gallery.jpg"
 		}
 	},
 	{
@@ -253,16 +253,16 @@
 		"source": "https://en.wikipedia.org/wiki/Mona_Lisa",
 		"link": "/mona-lisa",
 		"artist": {
-			"image": "../src/assets/mona-lisa/artist.jpg",
+			"image": "../../public/assets/mona-lisa/artist.jpg",
 			"name": "Leonardo da Vinci"
 		},
 		"images": {
-			"thumbnail": "../src/assets/mona-lisa/thumbnail.jpg",
+			"thumbnail": "../../public/assets/mona-lisa/thumbnail.jpg",
 			"hero": {
-				"small": "../src/assets/mona-lisa/hero-small.jpg",
-				"large": "../src/assets/mona-lisa/hero-large.jpg"
+				"small": "../../public/assets/mona-lisa/hero-small.jpg",
+				"large": "../../public/assets/mona-lisa/hero-large.jpg"
 			},
-			"gallery": "../src/assets/mona-lisa/gallery.jpg"
+			"gallery": "../../public/assets/mona-lisa/gallery.jpg"
 		}
 	},
 	{
@@ -272,16 +272,16 @@
 		"source": "https://en.wikipedia.org/wiki/The_Swing_(Fragonard)",
 		"link": "/the-swing",
 		"artist": {
-			"image": "../src/assets/the-swing/artist.jpg",
+			"image": "../../public/assets/the-swing/artist.jpg",
 			"name": "Jean-Honoré Fragonard"
 		},
 		"images": {
-			"thumbnail": "../src/assets/the-swing/thumbnail.jpg",
+			"thumbnail": "../../public/assets/the-swing/thumbnail.jpg",
 			"hero": {
-				"small": "../src/assets/the-swing/hero-small.jpg",
-				"large": "../src/assets/the-swing/hero-large.jpg"
+				"small": "../../public/assets/the-swing/hero-small.jpg",
+				"large": "../../public/assets/the-swing/hero-large.jpg"
 			},
-			"gallery": "../src/assets/the-swing/gallery.jpg"
+			"gallery": "../../public/assets/the-swing/gallery.jpg"
 		}
 	}
 ]
