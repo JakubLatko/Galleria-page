@@ -16,9 +16,10 @@
 				"large": "../assets/starry-night/hero-large.jpg"
 			},
 			"gallery": "../assets/starry-night/gallery.jpg",
-			"indexGallery": "./assets/starry-night/gallery.jpg",
-			"indexThumbnail": "./assets/starry-night/thumbnail.jpg",
-			"indexLarge": "./assets/starry-night/hero-large.jpg"
+
+			"indexGallery": "https://galleria-page.netlify.app/assets/starry-night/gallery.jpg",
+			"indexThumbnail": "https://galleria-page.netlify.app/assets/starry-night/thumbnail.jpg",
+			"indexLarge": "https://galleria-page.netlify.app/assets/starry-night/hero-large.jpg"
 		}
 	},
 	{
@@ -38,9 +39,9 @@
 				"large": "../assets/girl-with-pearl-earring/hero-large.jpg"
 			},
 			"gallery": "../assets/girl-with-pearl-earring/gallery.jpg",
-			"indexGallery": "./assets/girl-with-pearl-earring/gallery.jpg",
-			"indexThumbnail": "./assets/girl-with-pearl-earring/thumbnail.jpg",
-			"indexLarge": "./assets/girl-with-pearl-earring/hero-large.jpg"
+			"indexGallery": "https://galleria-page.netlify.app/assets/girl-with-pearl-earring/gallery.jpg",
+			"indexThumbnail": "https://galleria-page.netlify.app/assets/girl-with-pearl-earring/thumbnail.jpg",
+			"indexLarge": "https://galleria-page.netlify.app/assets/girl-with-pearl-earring/hero-large.jpg"
 		}
 	},
 	{
@@ -60,9 +61,9 @@
 				"large": "../assets/guernica/hero-large.jpg"
 			},
 			"gallery": "../assets/guernica/gallery.jpg",
-			"indexGallery": "./assets/guernica/gallery.jpg",
-			"indexThumbnail": "./assets/guernica/thumbnail.jpg",
-			"indexLarge": "./assets/guernica/hero-large.jpg"
+			"indexGallery": "https://galleria-page.netlify.app/assets/guernica/gallery.jpg",
+			"indexThumbnail": "https://galleria-page.netlify.app/assets/guernica/thumbnail.jpg",
+			"indexLarge": "https://galleria-page.netlify.app/assets/guernica/hero-large.jpg"
 		}
 	},
 	{
@@ -82,9 +83,9 @@
 				"large": "../assets/penitent-magdalene/hero-large.jpg"
 			},
 			"gallery": "../assets/penitent-magdalene/gallery.jpg",
-			"indexGallery": "./assets/penitent-magdalene/gallery.jpg",
-			"indexThumbnail": "./assets/penitent-magdalene/thumbnail.jpg",
-			"indexLarge": "./assets/penitent-magdalene/hero-large.jpg"
+			"indexGallery": "https://galleria-page.netlify.app/assets/penitent-magdalene/gallery.jpg",
+			"indexThumbnail": "https://galleria-page.netlify.app/assets/penitent-magdalene/thumbnail.jpg",
+			"indexLarge": "https://galleria-page.netlify.app/assets/penitent-magdalene/hero-large.jpg"
 		}
 	},
 	{
@@ -104,9 +105,9 @@
 				"large": "../assets/the-storm-on-the-sea-of-galilee/hero-large.jpg"
 			},
 			"gallery": "../assets/the-storm-on-the-sea-of-galilee/gallery.jpg",
-			"indexGallery": "./assets/the-storm-on-the-sea-of-galilee/gallery.jpg",
-			"indexThumbnail": "./assets/the-storm-on-the-sea-of-galilee/thumbnail.jpg",
-			"indexLarge": "./assets/the-storm-on-the-sea-of-galilee/hero-large.jpg"
+			"indexGallery": "https://galleria-page.netlify.app/assets/the-storm-on-the-sea-of-galilee/gallery.jpg",
+			"indexThumbnail": "https://galleria-page.netlify.app/assets/the-storm-on-the-sea-of-galilee/thumbnail.jpg",
+			"indexLarge": "https://galleria-page.netlify.app/assets/the-storm-on-the-sea-of-galilee/hero-large.jpg"
 		}
 	},
 	{
@@ -126,9 +127,9 @@
 				"large": "../assets/the-great-wave-off-kanagawa/hero-large.jpg"
 			},
 			"gallery": "../assets/the-great-wave-off-kanagawa/gallery.jpg",
-			"indexGallery": "./assets/the-great-wave-off-kanagawa/gallery.jpg",
-			"indexThumbnail": "./assets/the-great-wave-off-kanagawa/thumbnail.jpg",
-			"indexLarge": "./assets/the-great-wave-off-kanagawa/hero-large.jpg"
+			"indexGallery": "https://galleria-page.netlify.app/assets/the-great-wave-off-kanagawa/gallery.jpg",
+			"indexThumbnail": "https://galleria-page.netlify.app/assets/the-great-wave-off-kanagawa/thumbnail.jpg",
+			"indexLarge": "https://galleria-page.netlify.app/assets/the-great-wave-off-kanagawa/hero-large.jpg"
 		}
 	},
 	{
@@ -148,9 +149,9 @@
 				"large": "../assets/van-gogh-self-portrait/hero-large.jpg"
 			},
 			"gallery": "../assets/van-gogh-self-portrait/gallery.jpg",
-			"indexGallery": "./assets/van-gogh-self-portrait/gallery.jpg",
-			"indexThumbnail": "./assets/van-gogh-self-portrait/thumbnail.jpg",
-			"indexLarge": "./assets/van-gogh-self-portrait/hero-large.jpg"
+			"indexGallery": "https://galleria-page.netlify.app/assets/van-gogh-self-portrait/gallery.jpg",
+			"indexThumbnail": "https://galleria-page.netlify.app/assets/van-gogh-self-portrait/thumbnail.jpg",
+			"indexLarge": "https://galleria-page.netlify.app/assets/van-gogh-self-portrait/hero-large.jpg"
 		}
 	},
 	{
@@ -170,9 +171,9 @@
 				"large": "../assets/the-sleeping-gypsy/hero-large.jpg"
 			},
 			"gallery": "../assets/the-sleeping-gypsy/gallery.jpg",
-			"indexGallery": "./assets/the-sleeping-gypsy/gallery.jpg",
-			"indexThumbnail": "./assets/the-sleeping-gypsy/thumbnail.jpg",
-			"indexLarge": "./assets/the-sleeping-gypsy/hero-large.jpg"
+			"indexGallery": "https://galleria-page.netlify.app/assets/the-sleeping-gypsy/gallery.jpg",
+			"indexThumbnail": "https://galleria-page.netlify.app/assets/the-sleeping-gypsy/thumbnail.jpg",
+			"indexLarge": "https://galleria-page.netlify.app/assets/the-sleeping-gypsy/hero-large.jpg"
 		}
 	},
 	{
@@ -192,9 +193,9 @@
 				"large": "../assets/lady-with-an-ermine/hero-large.jpg"
 			},
 			"gallery": "../assets/lady-with-an-ermine/gallery.jpg",
-			"indexGallery": "./assets/lady-with-an-ermine/gallery.jpg",
-			"indexThumbnail": "./assets/lady-with-an-ermine/thumbnail.jpg",
-			"indexLarge": "./assets/lady-with-an-ermine/hero-large.jpg"
+			"indexGallery": "https://galleria-page.netlify.app/assets/lady-with-an-ermine/gallery.jpg",
+			"indexThumbnail": "https://galleria-page.netlify.app/assets/lady-with-an-ermine/thumbnail.jpg",
+			"indexLarge": "https://galleria-page.netlify.app/assets/lady-with-an-ermine/hero-large.jpg"
 		}
 	},
 	{
@@ -214,9 +215,9 @@
 				"large": "../assets/the-night-cafe/hero-large.jpg"
 			},
 			"gallery": "../assets/the-night-cafe/gallery.jpg",
-			"indexGallery": "./assets/the-night-cafe/gallery.jpg",
-			"indexThumbnail": "./assets/the-night-cafe/thumbnail.jpg",
-			"indexLarge": "./assets/the-night-cafe/hero-large.jpg"
+			"indexGallery": "https://galleria-page.netlify.app/assets/the-night-cafe/gallery.jpg",
+			"indexThumbnail": "https://galleria-page.netlify.app/assets/the-night-cafe/thumbnail.jpg",
+			"indexLarge": "https://galleria-page.netlify.app/assets/the-night-cafe/hero-large.jpg"
 		}
 	},
 	{
@@ -236,9 +237,9 @@
 				"large": "../assets/the-basket-of-apples/hero-large.jpg"
 			},
 			"gallery": "../assets/the-basket-of-apples/gallery.jpg",
-			"indexGallery": "./assets/the-basket-of-apples/gallery.jpg",
-			"indexThumbnail": "./assets/the-basket-of-apples/thumbnail.jpg",
-			"indexLarge": "./assets/the-basket-of-apples/hero-large.jpg"
+			"indexGallery": "https://galleria-page.netlify.app/assets/the-basket-of-apples/gallery.jpg",
+			"indexThumbnail": "https://galleria-page.netlify.app/assets/the-basket-of-apples/thumbnail.jpg",
+			"indexLarge": "https://galleria-page.netlify.app/assets/the-basket-of-apples/hero-large.jpg"
 		}
 	},
 	{
@@ -258,9 +259,9 @@
 				"large": "../assets/the-boy-in-the-red-vest/hero-large.jpg"
 			},
 			"gallery": "../assets/the-boy-in-the-red-vest/gallery.jpg",
-			"indexGallery": "./assets/the-boy-in-the-red-vest/gallery.jpg",
-			"indexThumbnail": "./assets/the-boy-in-the-red-vest/thumbnail.jpg",
-			"indexLarge": "./assets/the-boy-in-the-red-vest/hero-large.jpg"
+			"indexGallery": "https://galleria-page.netlify.app/assets/the-boy-in-the-red-vest/gallery.jpg",
+			"indexThumbnail": "https://galleria-page.netlify.app/assets/the-boy-in-the-red-vest/thumbnail.jpg",
+			"indexLarge": "https://galleria-page.netlify.app/assets/the-boy-in-the-red-vest/hero-large.jpg"
 		}
 	},
 	{
@@ -280,9 +281,9 @@
 				"large": "../assets/arnolfini-portrait/hero-large.jpg"
 			},
 			"gallery": "../assets/arnolfini-portrait/gallery.jpg",
-			"indexGallery": "./assets/arnolfini-portrait/gallery.jpg",
-			"indexThumbnail": "./assets/arnolfini-portrait/thumbnail.jpg",
-			"indexLarge": "./assets/arnolfini-portrait/hero-large.jpg"
+			"indexGallery": "https://galleria-page.netlify.app/assets/arnolfini-portrait/gallery.jpg",
+			"indexThumbnail": "https://galleria-page.netlify.app/assets/arnolfini-portrait/thumbnail.jpg",
+			"indexLarge": "https://galleria-page.netlify.app/assets/arnolfini-portrait/hero-large.jpg"
 		}
 	},
 	{
@@ -302,9 +303,9 @@
 				"large": "../assets/mona-lisa/hero-large.jpg"
 			},
 			"gallery": "../assets/mona-lisa/gallery.jpg",
-			"indexGallery": "./assets/mona-lisa/gallery.jpg",
-			"indexThumbnail": "./assets/mona-lisa/thumbnail.jpg",
-			"indexLarge": "./assets/mona-lisa/hero-large.jpg"
+			"indexGallery": "https://galleria-page.netlify.app/assets/mona-lisa/gallery.jpg",
+			"indexThumbnail": "https://galleria-page.netlify.app/assets/mona-lisa/thumbnail.jpg",
+			"indexLarge": "https://galleria-page.netlify.app/assets/mona-lisa/hero-large.jpg"
 		}
 	},
 	{
@@ -324,9 +325,9 @@
 				"large": "../assets/the-swing/hero-large.jpg"
 			},
 			"gallery": "../assets/the-swing/gallery.jpg",
-			"indexGallery": "./assets/the-swing/gallery.jpg",
-			"indexThumbnail": "./assets/the-swing/thumbnail.jpg",
-			"indexLarge": "./assets/the-swing/hero-large.jpg"
+			"indexGallery": "https://galleria-page.netlify.app/assets/the-swing/gallery.jpg",
+			"indexThumbnail": "https://galleria-page.netlify.app/assets/the-swing/thumbnail.jpg",
+			"indexLarge": "https://galleria-page.netlify.app/assets/the-swing/hero-large.jpg"
 		}
 	}
 ]
